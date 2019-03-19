@@ -1,0 +1,14 @@
+@import "components/mixins";
+@import "components/variables";
+@import "components/normilize";
+@import "components/helpers";
+@import "components/fonts";
+@import "components/base";
+@import "components/media";
+
+//parts
+@import "parts/header";
+@import "parts/footer";
+
+// pages
+@import "pages/main";

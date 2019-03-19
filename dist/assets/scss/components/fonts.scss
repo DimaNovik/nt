@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'FuturaNewDemi';
+  src: url("#{$fontPath}Futura/FuturaNewDemi-Reg.woff2") format("woff2"),
+  url("#{$fontPath}/Futura/FuturaNewDemi-Reg.woff") format("woff"),
+  url("#{$fontPath}/Futura/FuturaNewDemi-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FuturaNewBook';
+  src: url("#{$fontPath}/Futura/FuturaNewBook-Reg.woff2") format("woff2"),
+  url("#{$fontPath}/Futura/FuturaNewBook-Reg.woff") format("woff"),
+  url("#{$fontPath}/Futura/FuturaNewBook-Reg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

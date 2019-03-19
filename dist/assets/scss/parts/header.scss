@@ -1,0 +1,124 @@
+.header {
+
+  &__top_bg {
+    background-color: $blue_d;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    padding: em(10) 0;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      width: em(20);
+      max-width: em(20);
+      height: em(20);
+      margin-left: em(15);
+      cursor: pointer;
+    }
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    margin-left: em(35);
+
+    .icon {
+      width: em(25);
+      height: em(25);
+      margin-right: em(15);
+    }
+
+    .link {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+
+  &__nav_bg {
+    background-color: $blue;
+  }
+
+  &__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: em(130);
+
+    li {
+      height: 100%;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      max-width: em(508);
+      height: 100%;
+      padding: em(15) em(10);
+      font-size: em(16);
+      color: $white;
+      text-transform: uppercase;
+      word-wrap: break-word;
+      text-align: center;
+      transition: color .4s ease;
+
+      &:hover {
+        color: rgba($white, .8);
+
+        & + .header__down {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+
+    .link--logo {
+      transition: transform .4s ease;
+      &:hover {
+        transform: translate(0, -5%);
+      }
+    }
+
+    .logo {
+      max-width: em(450);
+    }
+  }
+
+  &__down {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: em(174);
+    text-align: center;
+    background-color: $blue_d;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: opacity .4s ease;
+
+    &:hover {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    li {
+      display: inline-block;
+      &:not(:last-child) {
+        margin-right: em(35);
+      }
+    }
+
+    .link {
+      padding: em(25) em(10);
+      font-size: em(18);
+      color: $white;
+      white-space: nowrap;
+    }
+  }
+}
