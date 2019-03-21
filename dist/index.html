@@ -34,7 +34,7 @@
 
         @media screen and (max-width: 768px){
             #app {
-                font-size: 1vw;
+                font-size: 2.134vw;
             }
         }
     </style>
@@ -108,6 +108,7 @@
                         <ul class="header__down">
                             <li><a href="#" class="link">Єдиний реєстр нотаріусів</a></li>
                             <li><a href="#" class="link">Консультативно-матодична Рада</a></li>
+                            <li><a href="#" class="link">Форум</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -126,7 +127,7 @@
                         <a href="#" class="other_news">Всі новини</a>
                     </div>
                     <div class="main__cards">
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <h3 class="title">УВАГА!!! Зміна адреси Одеської філії державного підприємства
@@ -136,49 +137,49 @@
                                     55, прим. 502.</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
                             </div>
                         </a> <!-- End item news -->
-                        <a href="/" class="item" style="background-image: url('/assets/img/unnamed.jpg')">
+                        <a href="/" class="item" style="background-image: url('assets/img/unnamed.jpg')">
                             <div class="description">
                                 <span class="time">12.03.2019</span>
                                 <p class="title">text2</p>
@@ -191,7 +192,7 @@
                     <div class="main__info">
                         <h2>Інформація для громадян</h2>
                         <a href="https://online.minjust.gov.ua/" target="_blank">
-                            <img src="/assets/img/bydjust.png" alt="Он-лайн будинок юстиції" class="img">
+                            <img src="assets/img/bydjust.png" alt="Он-лайн будинок юстиції" class="img">
                         </a>
                     </div>
                     <div class="main__anons">
@@ -393,7 +394,8 @@
             <div class="footer__item">
                 <h2 class="title">Про відділ</h2>
                 <ul class="list">
-                    <li><a href='?view=cat&category=<?= $key ?>' title="234">sdfsdf</a></li>
+                    <li><a href="#" class="link">Склад відділу</a></li>
+                    <li><a href="#" class="link">Правові засади діяльності</a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -406,7 +408,6 @@
 
                     </li>
                     <li><a href="?view=allphoto">Фотогалерея</a>
-
                     </li>
                     <li><a href="?view=allvideo">Відеогалерея</a>
                     </li>
@@ -415,12 +416,40 @@
             <div class="footer__item">
                 <h2 class="title">Корисна інформація</h2>
                 <ul class="list">
-                    <li><a href='http://setam.gov.ua/' title="123" target='_blank'>234</a></li>
+                    <li><a href="#" class="link">Єдиний реєстр нотаріусів</a></li>
+                    <li><a href="#" class="link">Консультативно-матодична Рада</a></li>
+                    <li><a href="#" class="link">Форум</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
-<script src="/dist/assets/js/common.js"></script>
+
+<div class="auth__popup">
+
+    <form method="post" action="#" class="auth__form">
+        <h2>Особистий кабінет</h2>
+        <p>
+            <label>
+                <input type="text" name="login" class="input" placeholder="Логін">
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="password" name="password" class="input" placeholder="Пароль">
+            </label>
+        </p>
+        <p>
+            <input type="submit" class="submit" value="Увійти">
+        </p>
+        <p>
+            <a href="#" class="reg">Реєстрація</a>
+        </p>
+    </form>
+</div>
+
+
+<div class="overlay"></div>
+<script src="/assets/js/common.js"></script>
 </body>
 </html>

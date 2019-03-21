@@ -1,0 +1,26 @@
+.main {
+
+  &__area {
+    flex-wrap: wrap;
+  }
+
+
+  &__news {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  &__cards {
+    .item {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.useful__item {
+  width: 100%;
+  .link {
+    width: 100%;
+  }
+}

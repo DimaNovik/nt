@@ -31,7 +31,8 @@
             <div class="footer__item">
                 <h2 class="title">Про відділ</h2>
                 <ul class="list">
-                    <li><a href='?view=cat&category=<?= $key ?>' title="234">sdfsdf</a></li>
+                    <li><a href="#" class="link">Склад відділу</a></li>
+                    <li><a href="#" class="link">Правові засади діяльності</a></li>
                 </ul>
             </div>
             <div class="footer__item">
@@ -44,7 +45,6 @@
 
                     </li>
                     <li><a href="?view=allphoto">Фотогалерея</a>
-
                     </li>
                     <li><a href="?view=allvideo">Відеогалерея</a>
                     </li>
@@ -53,12 +53,40 @@
             <div class="footer__item">
                 <h2 class="title">Корисна інформація</h2>
                 <ul class="list">
-                    <li><a href='http://setam.gov.ua/' title="123" target='_blank'>234</a></li>
+                    <li><a href="#" class="link">Єдиний реєстр нотаріусів</a></li>
+                    <li><a href="#" class="link">Консультативно-матодична Рада</a></li>
+                    <li><a href="#" class="link">Форум</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
-<script src="/dist/assets/js/common.js"></script>
+
+<div class="auth__popup">
+
+    <form method="post" action="#" class="auth__form">
+        <h2>Особистий кабінет</h2>
+        <p>
+            <label>
+                <input type="text" name="login" class="input" placeholder="Логін">
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="password" name="password" class="input" placeholder="Пароль">
+            </label>
+        </p>
+        <p>
+            <input type="submit" class="submit" value="Увійти">
+        </p>
+        <p>
+            <a href="#" class="reg">Реєстрація</a>
+        </p>
+    </form>
+</div>
+
+
+<div class="overlay"></div>
+<script src="/assets/js/common.js"></script>
 </body>
 </html>

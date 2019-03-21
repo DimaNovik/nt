@@ -32,7 +32,7 @@
 
     .item {
       position: relative;
-      width: em(400);
+      width: em(350);
       max-width: em(400);
       height: em(350);
       margin-bottom: em(20);
@@ -49,12 +49,16 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: rgba($black, .65);
+        background-color: rgba($blue, .8);
         transition: background-color .4s ease;
         z-index: 2;
       }
 
       &:hover {
+        &:after {
+          background-color: rgba($blue, .7);
+        }
+
         .description {
           transform: translate(0, -3%);
         }
@@ -174,8 +178,7 @@
 
     .link {
       width: em(300);
-      min-width: em(300);
-      padding: 0 em(5);
+      padding: em(25) em(5);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -184,6 +187,4 @@
       background-color: $blue_d;
     }
   }
-
-
 }

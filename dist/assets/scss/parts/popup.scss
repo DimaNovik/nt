@@ -1,0 +1,65 @@
+.auth {
+
+  &__popup {
+    position: fixed;
+    width: em(500);
+    height: auto;
+    left: 0;
+    top: 0;
+    border-radius: em(15);
+    background-color: $white;
+    text-align: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -100%);
+    transition: transform .4s ease;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__form {
+    padding: em(25) em(35);
+
+    .input {
+      width: 100%;
+      margin-bottom: em(25);
+      padding: em(10) em(5);
+      border: 1px solid rgba($black, .3);
+      font-size: em(18)
+    }
+
+    .submit {
+      border: 0;
+      padding: em(10) em(35);
+      margin-bottom: em(15);
+      font-size: em(18);
+      color: $white;
+      text-transform: uppercase;
+      background-color: $blue_d;
+      cursor: pointer;
+      transition: background-color .4s ease;
+
+      &:hover {
+
+        background-color: rgba($blue_d , .9);
+      }
+    }
+
+    .reg {
+      color: $black;
+      border-bottom: 1px dashed rgba($black, .8);
+      transition: color .4s ease;
+
+      &:hover {
+        color: $blue_d
+      }
+    }
+  }
+}

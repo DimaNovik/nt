@@ -9,6 +9,13 @@
 //parts
 @import "parts/header";
 @import "parts/footer";
+@import "parts/popup";
 
 // pages
 @import "pages/main";
+
+@media screen and (max-width: 768px){
+    @import "mobile/pages/main";
+
+
+}
