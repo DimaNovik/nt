@@ -19,4 +19,22 @@ window.addEventListener('load', function () {
         })
     })();
 
+    (function toogleMenu() {
+        var nav = document.querySelector('.header__nav');
+        var burger = document.querySelector('.header__nav_mob .burger');
+        var menu = document.querySelectorAll('.header__list .link');
+
+        burger.addEventListener('click', function (e) {
+            e.preventDefault();
+            nav.classList.toggle('active');
+        });
+
+        menu.forEach(function (item) {
+            item.addEventListener('click', function () {
+                this.nextElementSibling.classList.toggle('active');
+            })
+        })
+
+    })();
+
 });

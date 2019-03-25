@@ -15,7 +15,9 @@
 @import "pages/main";
 
 @media screen and (max-width: 768px){
-    @import "mobile/pages/main";
+  @import "mobile/parts/header";
+
+  @import "mobile/pages/main";
 
 
 }

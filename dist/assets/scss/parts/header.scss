@@ -44,6 +44,10 @@
     background-color: $blue;
   }
 
+  &__nav_mob {
+    display: none;
+  }
+
   &__list {
     position: relative;
     display: flex;
